@@ -1,0 +1,62 @@
+
+
+
+.App {
+  text-align: center;
+  font-size: 100px;
+  background-color: black;
+  border-style: solid;
+  border-color: rgb(26, 213, 219);
+  margin: 50px auto 0 auto;
+  width:700px ;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.display-red {
+  color: red;
+  height: 150px;
+  width: 500px;
+  margin: 50px auto 0 auto;
+  font-weight: bold;    
+  padding: 10px;
+    
+  border-radius: 20px;
+  background-color:rgb(26, 213, 219);
+}
+
+.display {
+  height: 150px;
+  width: 500px;
+  margin: 50px auto 0 auto;
+  font-weight: bold;    
+  padding: 10px;
+    
+  border-radius: 20px;
+  background-color:rgb(26, 213, 219);
+  
+}
+
+button {
+  font-size: 70px;
+  margin: 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: rgb(26, 213, 219);
+  border-color:  rgb(26, 213, 219);
+  padding: 5px 20px 5px 20px;
+}
+
+body {
+  background-color: black;
+}
+
+
+.buttons {
+  border-style: solid;
+  border-color: rgb(26, 213, 219);
+  margin: 30px 90px 5px 90px;
+  border-radius: 20px;
+  
+}
+
