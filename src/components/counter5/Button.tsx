@@ -4,7 +4,7 @@ type PropsType = {
     isDisabled?: boolean
 }
 
-export function Buttons(props: PropsType) {
+export function Button(props: PropsType) {
     return (
         <span >
             <button disabled={props.isDisabled} onClick={props.onClick}> {props.name} </button>

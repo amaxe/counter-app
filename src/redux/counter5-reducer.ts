@@ -8,24 +8,28 @@ export type ResetActionType = {
 }
 
 export type SetStartValueActionType = {
-    type: 'SET-START-VALUE'
+    type: "SET-START-VALUE"
     value: number
 }
 
 export type SetMaxValueActionType = {
-    type: 'SET-MAX-VALUE'
+    type: "SET-MAX-VALUE"
     value: number
 }
 
 export type ActionTypes = IncrementActionType | ResetActionType
     | SetStartValueActionType | SetMaxValueActionType
 
+
+export type InitialStateType = {
+    startValue: number
+    maxValue: number
+}
+
 const initialState = {
     startValue: 0,
     maxValue: 1
 }
-
-export type InitialStateType = typeof initialState
 
 export const counter5Reducer = (state: InitialStateType = initialState, action: ActionTypes): InitialStateType => {
     switch (action.type) {
@@ -46,14 +50,10 @@ export const counter5Reducer = (state: InitialStateType = initialState, action: 
     }
 }
 
-export const incrementAC = (): IncrementActionType => ({type: 'INCREMENT'})
+export const incrementAC = () => ({type: 'INCREMENT'})
 
-export const resetAC = (value: number): ResetActionType =>  ({type: 'RESET', value})
+export const resetAC = (value: number) => ({type: 'RESET', value})
 
-export const setStartValueAC = (value: number): SetStartValueActionType => {
-    return {type: "SET-START-VALUE", value}
-}
+export const setStartValueAC = (value: number) => ({type: "SET-START-VALUE", value})
 
-export const setMaxValueAC = (value: number): SetMaxValueActionType => {
-    return {type: "SET-MAX-VALUE", value}
-}
+export const setMaxValueAC = (value: number) => ({type: "SET-MAX-VALUE", value})

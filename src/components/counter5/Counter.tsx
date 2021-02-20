@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react'
-import {Buttons} from './Buttons'
+import React, {useState} from 'react'
+import {Button} from './Button'
 import {Display} from './Display'
 import s from './counter.module.css'
 import {Settings} from './Settings'
@@ -51,7 +51,7 @@ function Counter() {
                         tempMaxValue={tempMaxValue}
                     />
                     <div className={s.buttons}>
-                        <Buttons
+                        <Button
                             name="set"
                             onClick={onSetHandler}
                             isDisabled={setBtnDisable}
@@ -64,17 +64,17 @@ function Counter() {
                         maxValue={maxValue}
                     />
                     <div className={s.buttons}>
-                        <Buttons
+                        <Button
                             name="inc"
                             onClick={onIncHandler}
                             isDisabled={incBtnDisable}
                         />
-                        <Buttons
+                        <Button
                             name="reset"
                             onClick={onResetHandler}
                             isDisabled={resetBtnDisable}
                         />
-                        <Buttons
+                        <Button
                             name="set"
                             onClick={editModeHandler}
                         />
